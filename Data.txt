@@ -1,0 +1,63 @@
+Box-Model:
+
+Width :
+ 1. w-25 
+ 2. w-50
+ 3. w-75 
+ 4. w-100
+ 5. w-auto
+
+ Height :
+1. h-25
+2. h-50
+3. h-75
+4. h-100 
+5. h-auto 
+
+Contextual Class (*)
+1. bg-primary
+2. bg-secondary
+3. bg-info
+4. bg-warning
+5. bg-success
+6. bg-danger
+7. bg-dark
+8. bg-light
+9. bg-white 
+10. bg-black
+
+=================================================
+
+   Property    |  Direction    |  Size
+1. Margin          all(m)        0-0px(0 rem)
+                   top(mt)       1-4px(0.25rem)
+                   bottom(mb)    2-8px(0.5rem)
+                   start(ms)     3-16px(1rem)
+                   end(me)       4-24px(1.5rem) 
+                   X(mx)         5-48px(3rem)
+                   Y(my)         auto-equal
+
+---------------------------------------------------
+
+2. Padding         all(p)        0-0px(0 rem)
+                   top(pt)       1-4px(0.25rem)
+                   bottom(pb)    2-8px(0.5rem)
+                   start(ps)     3-16px(1rem)
+                   end(pe)       4-24px(1.5rem) 
+                   X(px)         5-48px(3rem)
+                   Y(py)         auto-equal
+
+==================================================
+
+<* represented as colors>
+=================================================
+
+   base-class    |  Color    |  Size
+1. border           border-*      0-0px(0 rem)
+2.border-top                      1-4px(0.25rem)
+3. border-bottom  |   radius   |  2-8px(0.5rem)
+4. border-start  rounded-circle   3-16px(1rem)
+5. border-end    rounded-pill     4-24px(1.5rem) 
+                 rounded-size     5-48px(3rem)
+                                  auto-equal
+==================================================
