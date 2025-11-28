@@ -1,0 +1,19 @@
+Image Properties
+
+* img-fluid
+* rounded
+* rounded-circle(height,width)
+* img-thumbnail
+
+Grid Classes
+* col -> Responsive columns of equal width
+* col - * (*- 1 to 12)
+
+Table-Classes
+* table
+* table-bordered
+* table-borderless
+* table-*
+* table-striped
+* table-hover
+* table-sm
