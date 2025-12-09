@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#m">Open Modal</button>
+        <div class="modal fade" id="m">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-info">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Confirmation Message</h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are You Sure ?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus maxime voluptatum, ipsum
+                        fugiat id odit excepturi eum minima maiores reprehenderit, debitis soluta dolore nostrum dolorem
+                        possimus sint aliquam expedita. Nemo obcaecati, vitae quibusdam asperiores inventore illo
+                        repellendus quod quaerat repudiandae odit, dolor et, explicabo sequi perspiciatis molestias iure
+                        veritatis aut ex earum praesentium dolores. Necessitatibus obcaecati rem nam, ad omnis numquam
+                        perspiciatis perferendis consectetur eveniet exercitationem magni officia, accusantium nisi
+                        quaerat ut quos! Voluptates, adipisci molestias ut rerum quisquam expedita consequatur modi esse
+                        provident error iusto, laborum iste. Earum voluptatem autem cupiditate corrupti quia tempora
+                        sit, quisquam doloribus explicabo aut?
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" id="ok" data-bs-target="#m1" data-bs-toggle="modal">OK</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="m1">
+            <div class="modal-dialog">
+                <div class="modal-content bg-info">
+                    <div class="modal-body">
+                        You Clicked Okay
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-target="#m" data-bs-toggle="modal">Go back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
