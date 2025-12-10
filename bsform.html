@@ -15,15 +15,17 @@
 
 <body>
     <div class="container mt-3 bg-light">
-        <form>
-            <label for="fn" class="form-label">First Name</label>
-            <input type="text" placeholder="Enter first name" id="fn" class="form-control-lg form-control">
+        <form class="was-validated">
+            <div>
+                <label for="fn" class="form-label">First Name</label>
+                <input type="text" placeholder="Enter first name" id="fn" required
+                    class="form-control-lg  form-control">
+                <div class="valid-feedback">You filled first name nicely!</div>
+                <div class="invalid-feedback">Kindly fill the first name!</div>
+            </div>
+
             <label for="ln" class="form-label mt-3">Last Name</label>
-            <input type="text" id="ln" placeholder="Enter last name" class="form-control-plaintext">
-        </form>
-    </div>
-    <div class="container mt-3 bg-light">
-        <form>
+            <input type="text" id="ln" placeholder="Enter last name" required class="form-control">
             <div class="row mt-3">
                 <div class="col-2">
                     <label for="un" class="form-label">Username</label>
@@ -58,12 +60,12 @@
 
             <div class="form-check">
                 <label for="" class="form-check-label">Reading:</label>
-            <input type="checkbox" class="form-check-input" name="" id="">
+                <input type="checkbox" class="form-check-input" name="" id="">
             </div>
 
             <div class="form-check">
                 <label for="" class="form-check-label">Anime:</label>
-            <input type="checkbox" class="form-check-input" name="" id="">
+                <input type="checkbox" class="form-check-input" name="" id="">
             </div>
 
             <label for="Gender" class="form-label">Gender:</label>
@@ -78,12 +80,12 @@
 
             <div class="form-check">
                 <label for="" class="form-check-label">Transgender</label>
-            <input name="g" type="radio" class="form-check-input" name="" id="">
+                <input name="g" type="radio" class="form-check-input" name="" id="">
             </div>
 
             <div class="form-check">
                 <label for="" class="form-check-label">Other 104 Genders</label>
-            <input name="g" type="radio" class="form-check-input" name="" id="">
+                <input name="g" type="radio" class="form-check-input" name="" id="">
             </div>
             <label class="form-label">City:</label>
             <select class="form-select">
@@ -96,10 +98,70 @@
             <input type="color" class="form-control-color">
             <label class="form-label">Profile Photo</label>
             <input type="file" name="" id="" class="form-control-file">
-            <input type="submit" name="" id="">
-            
+            <br>
+            <label class="form-label" for="">Price Range</label>
+            <div class="row mt-3">
+                <div class="col text-start">
+                    100
+                </div>
+                <div class="col">
+                    200
+                </div>
+                <div class="col text-center">
+                    300
+                </div>
+                <div class="col">
+                    400
+                </div>
+                <div class="col text-end">
+                    500
+                </div>
+            </div>
+            <input type="range" name="" id="" class="form-range">
+            <label class="form- mt-3   ">Email</label>
+            <div class="input-group form-control">
+                <input type="text" name="" placeholder="Enter your email-id" class="form-control">
+                <span class="input-group-text">
+                    @gmail.com
+                </span>
+            </div>
+
+            <label class="form- mt-3   ">Website Name:</label>
+            <div class="input-group form-control">
+                <span class="input-group-text">
+                    https://wwww
+                </span>
+                <input type="text" name="" placeholder="Enter your email-id" class="form-control">
+                <span class="input-group-text">
+                    .com
+                </span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="formId1" id="formId1" placeholder="" />
+                <label for="formId1">Age</label>
+            </div>
+            <div class="form-check  form-switch">
+                <input type="checkbox" class="form-check-input" name="" id="" checked>
+                <label for="" class="form-check-label"></label>
+                Agree to terms and Conditions
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary" value="register">
+                Register
+            </button>
+
+            <button type="reset" class="btn btn-success">
+                Reset
+            </button>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col"> <input type="submit" name="" id="" class="btn btn-primary w-50" value="register">
+                </div>
+                <div class="col"><input type="reset" name="" id="" class="btn btn-danger w-50" value="clear"></div>
+            </div>
         </form>
     </div>
 </body>
 
-</html> 
+</html>

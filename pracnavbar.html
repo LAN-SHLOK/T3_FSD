@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-primary-subtle">
+        <div class="nav-items fw-light navbar-brand">My Courses</div>
+        <div class="row nav-items">
+            <div class="col-4 fw-bolder">Home</div>
+            <div class="col-4 fw-bolder">Course</div>
+            <div class="col-4 fw-bolder">About</div>
+        </div>
+        <div class="nav-items">
+            <button class="btn btn-secondary fw-lighter" data-bs-toggle="modal" data-bs-target="#m">Login</button>
+            <button class="btn btn-secondary fw-lighter">Register</button>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="modal align-content-center " id="m">
+            <div class="modal-lg modal-dialog"></div>
+            <div class="modal-content">
+            <div class="modal-header">  
+                Login form
+            </div>
+            <div class="modal-body">
+                <form action="" class="was-validated">
+                    <label for="" class="form-label">Username</label>
+                    <input type="text" required name="" id="" class="form-control">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" required class="form-control" name="" id="">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" data-bs-target="#m1" data-bs-toggle="modal">Login</button>
+                <button class="btn btn-primary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m1">
+            <div class="modal-dialog">
+                <div class="modal-content bg-info">
+                    <div class="modal-body">
+                        Login Successfull
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-target="#m" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
